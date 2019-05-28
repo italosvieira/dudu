@@ -1,23 +1,34 @@
 package com.italosvieira.dudu
 
 import android.os.Bundle
+import android.support.design.card.MaterialCardView
 import android.support.design.widget.Snackbar
-import android.support.v7.app.AppCompatActivity;
+import android.support.v4.view.animation.FastOutSlowInInterpolator
+import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
-
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
+    /*private var mCard: MaterialCardView? = null*/
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        setSupportActionBar(toolbar)
+        /*setSupportActionBar(toolbar)*/
 
-        fab.setOnClickListener { view ->
+        /*var mCard = findViewById<MaterialCardView>(R.id.card)
+
+        mCard.animate()
+            .translationZ(mCard.z * 2) //elevação em Z
+            .setDuration(350) // duração de 350 milissegundos
+            .setInterpolator(FastOutSlowInInterpolator())
+            .start()*/
+
+        /*fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG).setAction("Action", null).show()
-        }
+        }*/
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
