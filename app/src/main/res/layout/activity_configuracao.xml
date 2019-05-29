@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ConfiguracaoActivity"
+        android:padding="8dp">
+
+    <android.support.v7.widget.CardView android:layout_width="match_parent" android:layout_height="match_parent">
+
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical"
+                          android:layout_margin="10dp"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content">
+
+                <LinearLayout android:orientation="vertical"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:gravity="center"
+                              android:background="@color/blue">
+
+                    <ImageView android:layout_marginTop="28dp"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginBottom="15dp"
+                               android:background="@drawable/logo"/>
+                </LinearLayout>
+
+                <Button android:text="@string/login"
+                        android:onClick="redirecionarLogin"
+                        android:backgroundTint="@color/background"
+                        android:layout_width="match_parent"
+                        android:drawableStart="@drawable/login"
+                        android:layout_height="wrap_content"/>
+
+                <Button android:text="@string/cadastrar"
+                        android:onClick="redirecionarCadastro"
+                        android:backgroundTint="@color/background"
+                        android:drawableStart="@drawable/cadastro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                <Button android:text="@string/exportar"
+                        android:layout_width="match_parent"
+                        android:backgroundTint="@color/background"
+                        android:drawableStart="@drawable/baixar"
+                        android:layout_height="wrap_content"/>
+
+                <Button android:text="@string/importar"
+                        android:layout_width="match_parent"
+                        android:drawableStart="@drawable/upload"
+                        android:backgroundTint="@color/background"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

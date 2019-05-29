@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ListarPetsActivity"
+        android:padding="16dp">
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <LinearLayout android:orientation="vertical"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/textView2"
+                      android:layout_marginStart="3dp"
+                      android:textSize="40sp"
+                      android:textStyle="bold"
+                      android:text="@string/meus_pets"
+                      android:textColor="@color/blue"
+                      android:textAlignment="center"
+                      android:layout_marginBottom="20dp"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"/>
+
+            <android.support.v7.widget.CardView android:onClick="detalharPet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="200dp"
+                            android:src="@drawable/dudu"
+                            android:scaleType="centerCrop"
+                            android:contentDescription="@string/foto_descricao_dudu"/>
+
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        <TextView android:text="@string/app_name"
+                                  android:textSize="30sp"
+                                  android:layout_marginStart="3dp"
+                                  android:layout_width="0dp"
+                                  android:layout_height="wrap_content"
+                                  android:layout_weight="1"/>
+
+                        <ImageButton
+                                android:backgroundTint="@color/red"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/lixeira" android:contentDescription="@string/foto_descricao_dudu"/>
+
+                        <ImageButton
+                                android:backgroundTint="@color/colorPrimary"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/editar" android:contentDescription="@string/foto_descricao_mel"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView android:onClick="detalharPet"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="10dp"
+                                                android:elevation="10dp"
+                                                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="200dp"
+                            android:src="@drawable/mel"
+                            android:scaleType="centerCrop"
+                            android:contentDescription="@string/foto_descricao_mel"/>
+
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        <TextView android:text="@string/mel"
+                                  android:textSize="30sp"
+                                  android:layout_marginStart="3dp"
+                                  android:layout_width="0dp"
+                                  android:layout_height="wrap_content"
+                                  android:layout_weight="1"/>
+
+                        <ImageButton
+                                android:backgroundTint="@color/red"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/lixeira"/>
+
+                        <ImageButton
+                                android:backgroundTint="@color/colorPrimary"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/editar"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="novoPet"
+            app:srcCompat="@drawable/icon_soma"
+            android:backgroundTint="@color/blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+</android.support.constraint.ConstraintLayout>
