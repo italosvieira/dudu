@@ -15,6 +15,20 @@
                       android:layout_width="match_parent"
                       android:layout_height="match_parent">
 
+            <LinearLayout android:orientation="vertical"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginBottom="20dp"
+                          android:gravity="center"
+                          android:background="@color/blue">
+
+                <ImageView android:layout_marginTop="28dp"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginBottom="15dp"
+                           android:background="@drawable/logo"/>
+            </LinearLayout>
+
             <EditText android:hint="@string/nome"
                       android:layout_width="match_parent"
                       android:layout_height="wrap_content"/>

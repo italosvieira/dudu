@@ -1,11 +1,10 @@
 package com.italosvieira.dudu
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 
-class CadastrarVacinaActivity : AppCompatActivity() {
+class CadastrarVacinaActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cadastrar_vacina)
