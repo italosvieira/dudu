@@ -9,11 +9,11 @@ Dudu é um protótipo funcional de um aplicativo para anroid para gerenciar seus
 Todos os icones são do https://icons8.com
 
 ## Telas do Aplicativo
-<p align="middle">
-  <img src="https://user-images.githubusercontent.com/28363732/58753871-51951480-849c-11e9-833c-5ced3126981c.png" width="33%" height="50%">
-  <img src="https://user-images.githubusercontent.com/28363732/58754252-99b73580-84a2-11e9-95a8-3e9a7f0dcd57.png" width="33%" height="50%">
-  <img src="https://user-images.githubusercontent.com/28363732/58754258-a8055180-84a2-11e9-9790-1f0633d5049a.png" width="32%" height="50%">
-</p>
+
+Splash Screen             |  Menu Lateral             |  Tela de Meus Pets
+:-------------------------:|:-------------------------:|:-------------------------:
+<img src="https://user-images.githubusercontent.com/28363732/58753871-51951480-849c-11e9-833c-5ced3126981c.png">  |  <img src="https://user-images.githubusercontent.com/28363732/58754252-99b73580-84a2-11e9-95a8-3e9a7f0dcd57.png">  |  <img src="https://user-images.githubusercontent.com/28363732/58754258-a8055180-84a2-11e9-9790-1f0633d5049a.png">
+
 
 <img src="https://user-images.githubusercontent.com/28363732/58754272-f0bd0a80-84a2-11e9-9316-d4e9fc84aa47.png" width="33%" height="50%">
 <img src="https://user-images.githubusercontent.com/28363732/58754276-f61a5500-84a2-11e9-808f-311e50d32eb3.png" width="33%" height="50%">
