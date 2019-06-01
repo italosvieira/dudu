@@ -26,7 +26,8 @@
                                android:layout_width="wrap_content"
                                android:layout_height="wrap_content"
                                android:layout_marginBottom="15dp"
-                               android:background="@drawable/logo"/>
+                               android:background="@drawable/logo"
+                               android:contentDescription="@string/icone_logo"/>
                 </LinearLayout>
 
                 <Button android:text="@string/login"

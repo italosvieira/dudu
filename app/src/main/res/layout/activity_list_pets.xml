@@ -16,21 +16,35 @@
                 app:layout_constraintTop_toTopOf="parent">
 
 
-
         <LinearLayout android:orientation="vertical"
                       android:layout_width="match_parent"
                       android:layout_height="wrap_content">
 
-            <TextView android:id="@+id/textView2"
-                      android:layout_marginStart="3dp"
-                      android:textSize="40sp"
-                      android:textStyle="bold"
-                      android:text="@string/meus_pets"
-                      android:textColor="@color/blue"
-                      android:textAlignment="center"
-                      android:layout_marginBottom="20dp"
-                      android:layout_width="match_parent"
-                      android:layout_height="wrap_content"/>
+            <LinearLayout android:orientation="horizontal"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:paddingBottom="10dp"
+                          android:paddingTop="10dp"
+                          android:layout_marginBottom="20dp"
+                          android:background="@color/blue">
+
+                <TextView android:textSize="40sp"
+                          android:textStyle="bold"
+                          android:layout_gravity="center"
+                          android:text="@string/meus_pets"
+                          android:layout_weight="1"
+                          android:textColor="@color/white"
+                          android:layout_width="0dp"
+                          android:layout_marginStart="5dp"
+                          android:layout_height="wrap_content"/>
+
+                <ImageView android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center"
+                           android:layout_marginEnd="10dp"
+                           android:background="@drawable/casa_cachorro_grande"
+                           android:contentDescription="@string/icone_logo"/>
+            </LinearLayout>
 
             <android.support.v7.widget.CardView android:onClick="detalharPet"
                     android:layout_width="match_parent"
@@ -59,6 +73,7 @@
 
                         <TextView android:text="@string/app_name"
                                   android:textSize="30sp"
+                                  android:textColor="@color/blue"
                                   android:layout_marginStart="3dp"
                                   android:layout_width="0dp"
                                   android:layout_height="wrap_content"
@@ -108,6 +123,7 @@
                         <TextView android:text="@string/mel"
                                   android:textSize="30sp"
                                   android:layout_marginStart="3dp"
+                                  android:textColor="@color/blue"
                                   android:layout_width="0dp"
                                   android:layout_height="wrap_content"
                                   android:layout_weight="1"/>

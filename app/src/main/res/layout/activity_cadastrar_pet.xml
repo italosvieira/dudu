@@ -15,8 +15,33 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent">
 
-        <TextView android:id="@+id/textView2"
-                  android:layout_marginStart="3dp"
+        <LinearLayout android:orientation="horizontal"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:paddingBottom="10dp"
+                      android:paddingTop="10dp"
+                      android:layout_marginBottom="20dp"
+                      android:background="@color/blue">
+
+            <TextView android:textSize="40sp"
+                      android:textStyle="bold"
+                      android:layout_gravity="center"
+                      android:text="@string/cadastro_pet"
+                      android:layout_weight="1"
+                      android:textColor="@color/white"
+                      android:layout_width="0dp"
+                      android:layout_marginStart="5dp"
+                      android:layout_height="wrap_content"/>
+
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginEnd="10dp"
+                       android:background="@drawable/casa_cachorro_grande"
+                       android:contentDescription="@string/icone_logo"/>
+        </LinearLayout>
+
+        <TextView android:layout_marginStart="3dp"
                   android:text="@string/foto"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"/>
